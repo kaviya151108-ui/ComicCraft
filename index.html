@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicCraft - AI Comic Story Creator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h1>ComicCraft</h1>
+
+    <p>AI Comic Story Creator</p>
+
+    <h2>Create Your Comic</h2>
+
+    <label>Story Prompt</label><br>
+    <textarea id="storyPrompt" placeholder="Example: A brave fox exploring an enchanted forest"></textarea>
+
+    <br><br>
+
+    <label>Main Character Name</label><br>
+    <input type="text" id="characterName" placeholder="Example: Leo">
+
+    <br><br>
+
+    <label>Setting</label><br>
+    <input type="text" id="setting" placeholder="Example: Enchanted Forest">
+
+    <br><br>
+
+    <label>Tone</label><br>
+    <select id="tone">
+        <option>Funny</option>
+        <option>Adventure</option>
+        <option>Drama</option>
+        <option>Fantasy</option>
+    </select>
+
+    <br><br>
+
+    <label>Art Style</label><br>
+    <select id="artStyle">
+        <option>Comic Book</option>
+        <option>Anime</option>
+        <option>Cartoon</option>
+        <option>Manga</option>
+    </select>
+
+    <br><br>
+
+    <button id="generateBtn" onclick="generateComic()">Generate Comics</button>
+
+    <div id="result"></div>
+<script src="/static/script.js"></script>
+</body>
+</html>
